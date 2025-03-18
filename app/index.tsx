@@ -1,3 +1,4 @@
+import GuessHistory from "@/components/GuessHistory";
 import GuessInput from "@/components/GuessInput";
 import { checkGuess } from "@/utils/checkGuess";
 import { Link } from "expo-router";
@@ -8,6 +9,7 @@ export default function HomeScreen() {
   const [feedback, setFeedback] = useState("");
   const [attempts, setAttempts] = useState(0);
   const [gameOver, setGameOver] = useState(false);
+  const [guesses, setGuesses] = useState<string[]>([]);
   const targetWord = "hello";
 
   const handleGuess = (guess: string) => {
@@ -17,13 +19,16 @@ export default function HomeScreen() {
       setFeedback("Please enter a word with 5 letters");
       return;
     }
-    if (guess.toLowerCase() === targetWord.toLowerCase() && attempts < 5) {
+
+    const result = checkGuess(guess.toLowerCase(), targetWord.toLowerCase());
+
+    setGuesses([...guesses, result]);
+
+    if (guess.toLowerCase() === targetWord.toLowerCase()) {
       setFeedback("🎉 Congratulations! You've found the word!");
       setGameOver(true);
       return;
     }
-    const result = checkGuess(guess.toLowerCase(), targetWord.toLowerCase());
-    setFeedback(result.join(" "));
     const newAttempt = attempts + 1;
     setAttempts(newAttempt);
 
@@ -37,6 +42,7 @@ export default function HomeScreen() {
     <View style={styles.container}>
       <Text style={styles.title}>Word Quest</Text>
       <GuessInput onSubmit={handleGuess} disabled={gameOver} />
+      <GuessHistory guesses={guesses} />
       <Text style={styles.feedback}>{feedback}</Text>
       <Text style={styles.attempts}>Attempts: {attempts}/5</Text>
       <Link href="/instructions" asChild>

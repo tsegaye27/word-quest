@@ -1,11 +1,11 @@
 export const checkGuess = (guess: string, target: string) => {
   return guess.split("").map((letter, index) => {
     if (letter === target[index]) {
-      return "🟩";
+      return { letter, color: "green" };
     } else if (target.includes(letter)) {
-      return "🟨";
+      return { letter, color: "yellow" };
     } else {
-      return "⬛";
+      return { letter, color: "gray" };
     }
   });
 };

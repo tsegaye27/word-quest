@@ -32,11 +32,12 @@ export default function InstructionsScreen() {
         </Text>
       </View>
 
-      <Link href="/game" asChild>
-        <TouchableOpacity
-          style={[styles.button, isDarkMode && styles.darkButton]}
-          activeOpacity={0.8}
-        >
+      <Link
+        style={[styles.button, isDarkMode && styles.darkButton]}
+        href="/game"
+        asChild
+      >
+        <TouchableOpacity activeOpacity={0.8}>
           <Text style={styles.buttonText}>Back to Game</Text>
         </TouchableOpacity>
       </Link>

@@ -4,7 +4,6 @@ import GuessHistory from "@/components/GuessHistory";
 import GuessInput from "@/components/GuessInput";
 import React, { useEffect, useState } from "react";
 import { checkGuess } from "@/utils/checkGuess";
-import words from "@/assets/words.json";
 import { getRandomWord } from "@/utils/words";
 
 export default function GameScreen() {

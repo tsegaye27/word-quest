@@ -1,6 +1,5 @@
-import React, { useState, useRef, useEffect } from "react";
-import { StyleSheet, TextInput, View, Keyboard } from "react-native";
-import { CustomButton } from "./CustomButton";
+import React, { useState, useRef } from "react";
+import { StyleSheet, TextInput, View, Keyboard, Button } from "react-native";
 
 type GuessInputProps = {
   onSubmit: (guess: string) => void;
@@ -13,10 +12,9 @@ export default function GuessInput({ onSubmit, disabled }: GuessInputProps) {
 
   const handleLetterChange = (text: string, index: number) => {
     const newLetters = [...letters];
-    newLetters[index] = text.slice(-1).toUpperCase(); // Only keep last character
+    newLetters[index] = text.slice(-1).toUpperCase();
     setLetters(newLetters);
 
-    // Auto-focus next input
     if (text && index < 4) {
       inputs.current[index + 1]?.focus();
     }
@@ -53,7 +51,7 @@ export default function GuessInput({ onSubmit, disabled }: GuessInputProps) {
           />
         ))}
       </View>
-      <CustomButton
+      <Button
         title="Submit"
         onPress={handleSubmit}
         disabled={disabled || letters.join("").length !== 5}
@@ -70,7 +68,7 @@ const styles = StyleSheet.create({
   inputRow: {
     flexDirection: "row",
     justifyContent: "center",
-    marginBottom: 20,
+    marginBottom: 16,
     gap: 8,
   },
   inputBox: {
@@ -82,6 +80,8 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: "bold",
     textAlign: "center",
+    textAlignVertical: "center",
+    padding: 0,
     color: "#333",
   },
 });

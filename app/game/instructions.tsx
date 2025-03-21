@@ -1,10 +1,10 @@
 import React from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import { Link } from "expo-router";
-import { useDarkMode } from "@/context/DarkModeContext"; // Add this import
+import { useDarkMode } from "@/context/DarkModeContext";
 
 export default function InstructionsScreen() {
-  const { isDarkMode } = useDarkMode(); // Get dark mode state
+  const { isDarkMode } = useDarkMode();
 
   return (
     <View style={[styles.container, isDarkMode && styles.darkContainer]}>

@@ -1,52 +1,26 @@
-import GuessHistory from "@/components/GuessHistory";
-import GuessInput from "@/components/GuessInput";
-import { checkGuess } from "@/utils/checkGuess";
+import { useDarkMode } from "@/context/DarkModeContext";
 import { Link } from "expo-router";
-import { useState } from "react";
-import { Button, StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
+import { CustomButton } from "@/components/CustomButton";
 
-export default function HomeScreen() {
-  const [feedback, setFeedback] = useState("");
-  const [attempts, setAttempts] = useState(0);
-  const [gameOver, setGameOver] = useState(false);
-  const [guesses, setGuesses] = useState<string[]>([]);
-  const targetWord = "hello";
-
-  const handleGuess = (guess: string) => {
-    if (gameOver) return;
-
-    if (guess.length !== targetWord.length) {
-      setFeedback("Please enter a word with 5 letters");
-      return;
-    }
-
-    const result = checkGuess(guess.toLowerCase(), targetWord.toLowerCase());
-
-    setGuesses([...guesses, result]);
-
-    if (guess.toLowerCase() === targetWord.toLowerCase()) {
-      setFeedback("🎉 Congratulations! You've found the word!");
-      setGameOver(true);
-      return;
-    }
-    const newAttempt = attempts + 1;
-    setAttempts(newAttempt);
-
-    if (newAttempt >= 5) {
-      setFeedback("❌Game over! The word was 'hello'");
-      setGameOver(true);
-    }
-  };
+export default function WelcomeScreen() {
+  const { isDarkMode } = useDarkMode();
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Word Quest</Text>
-      <GuessInput onSubmit={handleGuess} disabled={gameOver} />
-      <GuessHistory guesses={guesses} />
-      <Text style={styles.feedback}>{feedback}</Text>
-      <Text style={styles.attempts}>Attempts: {attempts}/5</Text>
+    <View style={[styles.container, isDarkMode && styles.darkContainer]}>
+      <Text style={[styles.title, isDarkMode && styles.darkText]}>
+        Word Quest
+      </Text>
+      <Text style={[styles.subtitle, isDarkMode && styles.darkText]}>
+        Guess the hidden word in 6 tries
+      </Text>
+
+      <Link href="/game" asChild>
+        <CustomButton title="New Game" onPress={() => {}} disabled={false} />
+      </Link>
+
       <Link href="/instructions" asChild>
-        <Button title="How to Play" />
+        <CustomButton title="How to Play" onPress={() => {}} disabled={false} />
       </Link>
     </View>
   );
@@ -58,8 +32,23 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     padding: 20,
+    backgroundColor: "#f5f5f5",
   },
-  title: { fontSize: 24, marginBottom: 20 },
-  feedback: { marginTop: 20, fontSize: 18 },
-  attempts: { marginTop: 18, fontSize: 16, color: "#666" },
+  darkContainer: {
+    backgroundColor: "#121212",
+  },
+  title: {
+    fontSize: 36,
+    fontWeight: "bold",
+    marginBottom: 16,
+    color: "#333",
+  },
+  darkText: {
+    color: "#fff",
+  },
+  subtitle: {
+    fontSize: 18,
+    marginBottom: 40,
+    color: "#666",
+  },
 });

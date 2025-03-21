@@ -1,12 +1,32 @@
 export const checkGuess = (guess: string, target: string) => {
-  const targetLetters = target.split("");
-  return guess.split("").map((letter, index) => {
+  const targetLetters = target.split(""); // H, E, L, L, O
+  const guessLetters = guess.split(""); // W, O, R, L, D
+
+  const letterCount: Record<string, number> = {};
+
+  targetLetters.forEach((letter) => {
+    letterCount[letter] = (letterCount[letter] || 0) + 1;
+  });
+
+  const result = new Array(guess.length).fill(null);
+
+  guessLetters.forEach((letter, index) => {
     if (letter === targetLetters[index]) {
-      return { letter, color: "#4CAF50" };
-    } else if (targetLetters.includes(letter)) {
-      return { letter, color: "#FFC107" };
-    } else {
-      return { letter, color: "#757575" };
+      result[index] = { letter, color: "#4CAF50" };
+      letterCount[letter]--;
     }
   });
+
+  guessLetters.forEach((letter, index) => {
+    if (result[index] === null) {
+      if (letterCount[letter] > 0) {
+        result[index] = { letter, color: "#FFC107" };
+        letterCount[letter]--;
+      } else {
+        result[index] = { letter, color: "#757575" };
+      }
+    }
+  });
+
+  return result;
 };

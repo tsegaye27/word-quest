@@ -1,3 +1,4 @@
+import React from "react";
 import { useDarkMode } from "@/context/DarkModeContext";
 import { StyleSheet, Text, View } from "react-native";
 import Animated, { FlipInEasyX } from "react-native-reanimated";
@@ -58,7 +59,6 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     color: "#ffffff",
     borderWidth: 2,
-    // Dynamic border color handled inline
     overflow: "hidden",
     textAlignVertical: "center",
   },

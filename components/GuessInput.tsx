@@ -1,5 +1,12 @@
 import React, { useState, useRef } from "react";
-import { StyleSheet, TextInput, View, Keyboard, Button } from "react-native";
+import {
+  StyleSheet,
+  TextInput,
+  View,
+  Keyboard,
+  TouchableOpacity,
+  Text,
+} from "react-native";
 
 type GuessInputProps = {
   onSubmit: (guess: string) => void;
@@ -17,6 +24,21 @@ export default function GuessInput({ onSubmit, disabled }: GuessInputProps) {
 
     if (text && index < 4) {
       inputs.current[index + 1]?.focus();
+    }
+  };
+
+  const handleBackspace = (index: number) => {
+    const newLetters = [...letters];
+    newLetters[index] = "";
+    setLetters(newLetters);
+    if (index > 0) {
+      inputs.current[index - 1]?.focus();
+    }
+  };
+
+  const handleKeyPress = (e: any, index: number) => {
+    if (e.nativeEvent.key === "Backspace") {
+      handleBackspace(index);
     }
   };
 
@@ -43,6 +65,7 @@ export default function GuessInput({ onSubmit, disabled }: GuessInputProps) {
             ]}
             value={letter}
             onChangeText={(text) => handleLetterChange(text, index)}
+            onKeyPress={(e) => handleKeyPress(e, index)}
             maxLength={1}
             editable={!disabled}
             keyboardType="default"
@@ -51,11 +74,16 @@ export default function GuessInput({ onSubmit, disabled }: GuessInputProps) {
           />
         ))}
       </View>
-      <Button
-        title="Submit"
+      <TouchableOpacity
+        style={[
+          styles.submitButton,
+          { opacity: disabled || letters.join("").length !== 5 ? 0.6 : 1 },
+        ]}
         onPress={handleSubmit}
         disabled={disabled || letters.join("").length !== 5}
-      />
+      >
+        <Text style={styles.buttonText}>Submit</Text>
+      </TouchableOpacity>
     </View>
   );
 }
@@ -83,5 +111,19 @@ const styles = StyleSheet.create({
     textAlignVertical: "center",
     padding: 0,
     color: "#333",
+  },
+  submitButton: {
+    backgroundColor: "#6200ee",
+    padding: 15,
+    borderRadius: 5,
+    alignItems: "center",
+    marginTop: 10,
+    width: "100%",
+    maxWidth: 200,
+  },
+  buttonText: {
+    color: "#fff",
+    fontSize: 16,
+    fontWeight: "bold",
   },
 });

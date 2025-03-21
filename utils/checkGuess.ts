@@ -1,6 +1,6 @@
 export const checkGuess = (guess: string, target: string) => {
-  const targetLetters = target.split(""); // H, E, L, L, O
-  const guessLetters = guess.split(""); // W, O, R, L, D
+  const targetLetters = target.split("");
+  const guessLetters = guess.split("");
 
   const letterCount: Record<string, number> = {};
 

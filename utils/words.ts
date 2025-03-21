@@ -12,10 +12,8 @@ export async function getRandomWord() {
     }
 
     const data = await response.json();
-    console.log("Fetched word:", data[0]);
     return data[0].toUpperCase();
   } catch (error) {
-    console.error("Fetch error:", error);
     const randomIndex = Math.floor(Math.random() * words.length);
     return words[randomIndex];
   }

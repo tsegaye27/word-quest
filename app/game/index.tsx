@@ -5,6 +5,7 @@ import GuessInput from "@/components/GuessInput";
 import React, { useEffect, useState } from "react";
 import { checkGuess } from "@/utils/checkGuess";
 import { getRandomWord } from "@/utils/words";
+import { getWordMeaning } from "@/utils/getWordMeaning";
 
 export default function GameScreen() {
   const { isDarkMode } = useDarkMode();
@@ -16,10 +17,13 @@ export default function GameScreen() {
   const [showModal, setShowModal] = useState(false);
   const [modalMessage, setModalMessage] = useState("");
   const [targetWord, setTargetWord] = useState("");
+  const [wordMeaning, setWordMeaning] = useState("");
 
   useEffect(() => {
     const initializeGame = async () => {
       const word = await getRandomWord();
+      const meaning = await getWordMeaning(word);
+      setWordMeaning(meaning);
       setTargetWord(word);
     };
     initializeGame();
@@ -38,7 +42,7 @@ export default function GameScreen() {
     }
 
     if (attempts >= 5) {
-      setModalMessage(`Game Over\nThe word was ${targetWord}`);
+      setModalMessage(`Game Over\nThe word was ${targetWord}\n${wordMeaning}`);
       setShowModal(true);
       setGameOver(true);
     }

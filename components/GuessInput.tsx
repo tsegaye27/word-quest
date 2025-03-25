@@ -18,22 +18,47 @@ export default function GuessInput({ onSubmit, disabled }: GuessInputProps) {
   const inputs = useRef<TextInput[]>(Array(5).fill(null));
 
   const handleLetterChange = (text: string, index: number) => {
+    const filtered = text.replace(/[^A-Za-z]/g, "").toUpperCase();
+    if (filtered === "" && text !== "") {
+      return;
+    }
     const newLetters = [...letters];
-    newLetters[index] = text.slice(-1).toUpperCase();
+
+    if (filtered.length > 1) {
+      const pastedLetters = filtered.slice(0, 5).split("");
+      pastedLetters.forEach((letter, i) => {
+        if (index + i < 5) {
+          newLetters[index + i] = letter;
+        }
+      });
+      setLetters(newLetters);
+      const nextIndex = Math.min(index + filtered.length, 4);
+      inputs.current[nextIndex]?.focus();
+      return;
+    }
+
+    if (index === 4 && letters[4] !== "") {
+      return;
+    }
+
+    newLetters[index] = filtered;
     setLetters(newLetters);
 
-    if (text && index < 4) {
+    if (filtered && index < 4) {
       inputs.current[index + 1]?.focus();
     }
   };
 
   const handleBackspace = (index: number) => {
     const newLetters = [...letters];
-    newLetters[index] = "";
-    setLetters(newLetters);
-    if (index > 0) {
-      inputs.current[index - 1]?.focus();
+    if (newLetters[index] === "") {
+      if (index > 0) {
+        inputs.current[index - 1]?.focus();
+      }
+    } else {
+      newLetters[index] = "";
     }
+    setLetters(newLetters);
   };
 
   const handleKeyPress = (e: any, index: number) => {
@@ -66,7 +91,7 @@ export default function GuessInput({ onSubmit, disabled }: GuessInputProps) {
             value={letter}
             onChangeText={(text) => handleLetterChange(text, index)}
             onKeyPress={(e) => handleKeyPress(e, index)}
-            maxLength={1}
+            maxLength={5}
             editable={!disabled}
             keyboardType="default"
             autoCapitalize="characters"

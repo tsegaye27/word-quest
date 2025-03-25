@@ -1,22 +1,702 @@
 [
-  "APPLE",
-  "BEACH",
-  "CHAIR",
-  "DREAM",
-  "EARTH",
-  "FRUIT",
-  "GHOST",
-  "HONEY",
-  "IGLOO",
-  "JUICE",
-  "KOALA",
-  "LEMON",
-  "MONEY",
-  "NIGHT",
-  "OCEAN",
-  "PIANO",
-  "QUEEN",
-  "RIVER",
-  "SNAKE",
-  "TIGER"
+  {
+    "word": "apple",
+    "meaning": "A round fruit with red, yellow, or green skin and firm white flesh",
+    "difficulty": "easy"
+  },
+  {
+    "word": "beach",
+    "meaning": "A shore of sand or pebbles along a body of water",
+    "difficulty": "easy"
+  },
+  {
+    "word": "chair",
+    "meaning": "A piece of furniture for one person to sit on",
+    "difficulty": "easy"
+  },
+  {
+    "word": "dance",
+    "meaning": "To move rhythmically to music",
+    "difficulty": "easy"
+  },
+  {
+    "word": "earth",
+    "meaning": "The planet we live on; soil or ground",
+    "difficulty": "easy"
+  },
+  {
+    "word": "field",
+    "meaning": "An open area of land, especially one planted with crops or grass",
+    "difficulty": "easy"
+  },
+  {
+    "word": "green",
+    "meaning": "The color of grass; environmentally friendly",
+    "difficulty": "easy"
+  },
+  {
+    "word": "heart",
+    "meaning": "The organ that pumps blood through the body; the center of emotions",
+    "difficulty": "easy"
+  },
+  {
+    "word": "house",
+    "meaning": "A building for human habitation",
+    "difficulty": "easy"
+  },
+  {
+    "word": "juice",
+    "meaning": "The liquid extracted from fruits or vegetables",
+    "difficulty": "easy"
+  },
+  {
+    "word": "light",
+    "meaning": "The natural agent that stimulates sight and makes things visible",
+    "difficulty": "easy"
+  },
+  {
+    "word": "money",
+    "meaning": "A medium of exchange in the form of coins and banknotes",
+    "difficulty": "easy"
+  },
+  {
+    "word": "night",
+    "meaning": "The period of darkness between sunset and sunrise",
+    "difficulty": "easy"
+  },
+  {
+    "word": "paper",
+    "meaning": "Material manufactured in thin sheets from wood pulp",
+    "difficulty": "easy"
+  },
+  {
+    "word": "plant",
+    "meaning": "A living organism that grows in soil, typically with leaves and roots",
+    "difficulty": "easy"
+  },
+  {
+    "word": "queen",
+    "meaning": "A female monarch or the wife of a king",
+    "difficulty": "easy"
+  },
+  {
+    "word": "river",
+    "meaning": "A large natural stream of water flowing in a channel to the sea or a lake",
+    "difficulty": "easy"
+  },
+  {
+    "word": "sound",
+    "meaning": "Vibrations that travel through the air and can be heard",
+    "difficulty": "easy"
+  },
+  {
+    "word": "table",
+    "meaning": "A piece of furniture with a flat top supported by legs",
+    "difficulty": "easy"
+  },
+  {
+    "word": "water",
+    "meaning": "A transparent, odorless, tasteless liquid essential for life",
+    "difficulty": "easy"
+  },
+  {
+    "word": "young",
+    "meaning": "Having lived or existed for only a short time; not old",
+    "difficulty": "easy"
+  },
+  {
+    "word": "bread",
+    "meaning": "Food made of flour, water, and yeast mixed together and baked",
+    "difficulty": "easy"
+  },
+  {
+    "word": "cloud",
+    "meaning": "A visible mass of water droplets suspended in the atmosphere",
+    "difficulty": "easy"
+  },
+  {
+    "word": "dream",
+    "meaning": "A series of thoughts, images, and sensations occurring during sleep",
+    "difficulty": "easy"
+  },
+  {
+    "word": "fruit",
+    "meaning": "The sweet and fleshy product of a tree or plant that contains seeds",
+    "difficulty": "easy"
+  },
+  {
+    "word": "horse",
+    "meaning": "A large four-legged mammal with hooves used for riding or racing",
+    "difficulty": "easy"
+  },
+  {
+    "word": "knife",
+    "meaning": "A cutting instrument with a sharp blade and handle",
+    "difficulty": "easy"
+  },
+  {
+    "word": "music",
+    "meaning": "Vocal or instrumental sounds combined to produce beauty of form",
+    "difficulty": "easy"
+  },
+  {
+    "word": "phone",
+    "meaning": "A device used to transmit sound over long distances",
+    "difficulty": "easy"
+  },
+  {
+    "word": "sleep",
+    "meaning": "A natural periodic state of rest for the mind and body",
+    "difficulty": "easy"
+  },
+  {
+    "word": "space",
+    "meaning": "The unlimited three-dimensional expanse in which all objects exist",
+    "difficulty": "easy"
+  },
+  {
+    "word": "tooth",
+    "meaning": "A hard structure in the mouth used for biting and chewing",
+    "difficulty": "easy"
+  },
+  {
+    "word": "world",
+    "meaning": "The earth, together with all of its countries and peoples",
+    "difficulty": "easy"
+  },
+  {
+    "word": "about",
+    "meaning": "On the subject of; concerning",
+    "difficulty": "easy"
+  },
+  {
+    "word": "above",
+    "meaning": "In or to a higher place than; over",
+    "difficulty": "easy"
+  },
+  {
+    "word": "alarm",
+    "meaning": "A warning of danger; a device that warns or alerts",
+    "difficulty": "medium"
+  },
+  {
+    "word": "angle",
+    "meaning": "The space between two intersecting lines or surfaces",
+    "difficulty": "medium"
+  },
+  {
+    "word": "ankle",
+    "meaning": "The joint connecting the foot with the leg",
+    "difficulty": "medium"
+  },
+  {
+    "word": "badge",
+    "meaning": "A small emblem worn to show identification or membership",
+    "difficulty": "medium"
+  },
+  {
+    "word": "bagel",
+    "meaning": "A dense bread roll in the shape of a ring",
+    "difficulty": "medium"
+  },
+  {
+    "word": "beast",
+    "meaning": "An animal, especially a large or dangerous four-footed one",
+    "difficulty": "medium"
+  },
+  {
+    "word": "blank",
+    "meaning": "Empty; without writing or marks; expressionless",
+    "difficulty": "medium"
+  },
+  {
+    "word": "blend",
+    "meaning": "To mix or combine smoothly and inseparably together",
+    "difficulty": "medium"
+  },
+  {
+    "word": "blink",
+    "meaning": "To shut and open the eyes quickly",
+    "difficulty": "medium"
+  },
+  {
+    "word": "blunt",
+    "meaning": "Having a dull edge or point; not sharp; direct in speech",
+    "difficulty": "medium"
+  },
+  {
+    "word": "blush",
+    "meaning": "To become red in the face from embarrassment or shame",
+    "difficulty": "medium"
+  },
+  {
+    "word": "boost",
+    "meaning": "To help or encourage to increase or improve",
+    "difficulty": "medium"
+  },
+  {
+    "word": "booth",
+    "meaning": "A small compartment or enclosed space for a specific use",
+    "difficulty": "medium"
+  },
+  {
+    "word": "brake",
+    "meaning": "A device for slowing or stopping a vehicle",
+    "difficulty": "medium"
+  },
+  {
+    "word": "brass",
+    "meaning": "A yellow alloy of copper and zinc",
+    "difficulty": "medium"
+  },
+  {
+    "word": "brave",
+    "meaning": "Ready to face and endure danger or pain; showing courage",
+    "difficulty": "medium"
+  },
+  {
+    "word": "bride",
+    "meaning": "A woman on her wedding day or just before and after it",
+    "difficulty": "medium"
+  },
+  {
+    "word": "brush",
+    "meaning": "An implement with bristles used for cleaning, grooming, or painting",
+    "difficulty": "medium"
+  },
+  {
+    "word": "bulky",
+    "meaning": "Taking up much space, typically inconveniently",
+    "difficulty": "medium"
+  },
+  {
+    "word": "burst",
+    "meaning": "To break open or apart suddenly and violently",
+    "difficulty": "medium"
+  },
+  {
+    "word": "cabin",
+    "meaning": "A small simple dwelling or rural lodging",
+    "difficulty": "medium"
+  },
+  {
+    "word": "camel",
+    "meaning": "A large desert animal with one or two humps on its back",
+    "difficulty": "medium"
+  },
+  {
+    "word": "candy",
+    "meaning": "Sweet food made with sugar or syrup",
+    "difficulty": "medium"
+  },
+  {
+    "word": "carry",
+    "meaning": "To support and move someone or something from one place to another",
+    "difficulty": "medium"
+  },
+  {
+    "word": "catch",
+    "meaning": "To intercept and hold a moving object with one's hands",
+    "difficulty": "medium"
+  },
+  {
+    "word": "cause",
+    "meaning": "A person or thing that gives rise to an action or condition",
+    "difficulty": "medium"
+  },
+  {
+    "word": "charm",
+    "meaning": "The power or quality of pleasing or delighting; attractiveness",
+    "difficulty": "medium"
+  },
+  {
+    "word": "chart",
+    "meaning": "A sheet of information in the form of a table, graph, or diagram",
+    "difficulty": "medium"
+  },
+  {
+    "word": "check",
+    "meaning": "To examine to determine accuracy or condition; a pattern of squares",
+    "difficulty": "medium"
+  },
+  {
+    "word": "chess",
+    "meaning": "A board game for two players using pieces moved on a checkered board",
+    "difficulty": "medium"
+  },
+  {
+    "word": "chief",
+    "meaning": "A leader or ruler of a people or clan; most important",
+    "difficulty": "medium"
+  },
+  {
+    "word": "child",
+    "meaning": "A young human being below the age of puberty",
+    "difficulty": "medium"
+  },
+  {
+    "word": "chill",
+    "meaning": "A moderate but penetrating coldness; to make cool",
+    "difficulty": "medium"
+  },
+  {
+    "word": "cinch",
+    "meaning": "An extremely easy task; a sure thing",
+    "difficulty": "medium"
+  },
+  {
+    "word": "civic",
+    "meaning": "Relating to a city or town, especially its administration",
+    "difficulty": "medium"
+  },
+  {
+    "word": "coast",
+    "meaning": "The land next to or close to the sea or ocean",
+    "difficulty": "medium"
+  },
+  {
+    "word": "coral",
+    "meaning": "A hard red, pink, or white substance secreted by marine polyps",
+    "difficulty": "medium"
+  },
+  {
+    "word": "cough",
+    "meaning": "To expel air from the lungs with a sudden sharp sound",
+    "difficulty": "medium"
+  },
+  {
+    "word": "crack",
+    "meaning": "A line on the surface of something along which it has split",
+    "difficulty": "medium"
+  },
+  {
+    "word": "craft",
+    "meaning": "An activity involving skill in making things by hand",
+    "difficulty": "medium"
+  },
+  {
+    "word": "crane",
+    "meaning": "A large machine with a projecting arm used for moving heavy objects",
+    "difficulty": "medium"
+  },
+  {
+    "word": "crate",
+    "meaning": "A slatted wooden case used for transporting goods",
+    "difficulty": "medium"
+  },
+  {
+    "word": "crowd",
+    "meaning": "A large number of people gathered together in a disorganized way",
+    "difficulty": "medium"
+  },
+  {
+    "word": "daily",
+    "meaning": "Happening or done every day",
+    "difficulty": "medium"
+  },
+  {
+    "word": "dairy",
+    "meaning": "A place where milk is processed and products like butter are produced",
+    "difficulty": "medium"
+  },
+  {
+    "word": "denim",
+    "meaning": "A sturdy cotton twill fabric, typically blue, used for jeans",
+    "difficulty": "medium"
+  },
+  {
+    "word": "depth",
+    "meaning": "The distance from the top to the bottom of something",
+    "difficulty": "medium"
+  },
+  {
+    "word": "digit",
+    "meaning": "A finger or toe; a single character in a number system",
+    "difficulty": "medium"
+  },
+  {
+    "word": "doubt",
+    "meaning": "A feeling of uncertainty or lack of conviction",
+    "difficulty": "medium"
+  },
+  {
+    "word": "elbow",
+    "meaning": "The joint between the forearm and the upper arm",
+    "difficulty": "medium"
+  },
+  {
+    "word": "elder",
+    "meaning": "Of greater age; senior",
+    "difficulty": "medium"
+  },
+  {
+    "word": "enemy",
+    "meaning": "A person who is actively opposed or hostile to someone",
+    "difficulty": "medium"
+  },
+  {
+    "word": "enjoy",
+    "meaning": "To take pleasure in something",
+    "difficulty": "medium"
+  },
+  {
+    "word": "enter",
+    "meaning": "To come or go into a place",
+    "difficulty": "medium"
+  },
+  {
+    "word": "equal",
+    "meaning": "Being the same in quantity, size, degree, or value",
+    "difficulty": "medium"
+  },
+  {
+    "word": "event",
+    "meaning": "A thing that happens or takes place, especially one of importance",
+    "difficulty": "medium"
+  },
+  {
+    "word": "exact",
+    "meaning": "Correct in all details; precise",
+    "difficulty": "medium"
+  },
+  {
+    "word": "exist",
+    "meaning": "To have objective reality or being",
+    "difficulty": "medium"
+  },
+  {
+    "word": "abyss",
+    "meaning": "A deep, immeasurable space or chasm",
+    "difficulty": "hard"
+  },
+  {
+    "word": "acrid",
+    "meaning": "Having an irritatingly strong and unpleasant taste or smell",
+    "difficulty": "hard"
+  },
+  {
+    "word": "acute",
+    "meaning": "Sharp or severe in effect; intense; having a sharp point",
+    "difficulty": "hard"
+  },
+  {
+    "word": "adept",
+    "meaning": "Very skilled or proficient at something",
+    "difficulty": "hard"
+  },
+  {
+    "word": "agile",
+    "meaning": "Able to move quickly and easily",
+    "difficulty": "hard"
+  },
+  {
+    "word": "alibi",
+    "meaning": "A claim that one was elsewhere when an act took place",
+    "difficulty": "hard"
+  },
+  {
+    "word": "amend",
+    "meaning": "To make minor changes to make something better or more accurate",
+    "difficulty": "hard"
+  },
+  {
+    "word": "ample",
+    "meaning": "Enough or more than enough; plentiful",
+    "difficulty": "hard"
+  },
+  {
+    "word": "angst",
+    "meaning": "A feeling of deep anxiety or dread",
+    "difficulty": "hard"
+  },
+  {
+    "word": "anvil",
+    "meaning": "A heavy iron block on which metal is shaped by hammering",
+    "difficulty": "hard"
+  },
+  {
+    "word": "axiom",
+    "meaning": "A statement or proposition regarded as self-evidently true",
+    "difficulty": "hard"
+  },
+  {
+    "word": "azure",
+    "meaning": "Bright blue in color, like a cloudless sky",
+    "difficulty": "hard"
+  },
+  {
+    "word": "belie",
+    "meaning": "To give a false impression of; to contradict",
+    "difficulty": "hard"
+  },
+  {
+    "word": "beret",
+    "meaning": "A round flat cap of felt or wool",
+    "difficulty": "hard"
+  },
+  {
+    "word": "blimp",
+    "meaning": "A small airship or dirigible",
+    "difficulty": "hard"
+  },
+  {
+    "word": "brink",
+    "meaning": "The extreme edge of land before a steep slope",
+    "difficulty": "hard"
+  },
+  {
+    "word": "cacti",
+    "meaning": "Plural form of cactus, plants with thick fleshy stems",
+    "difficulty": "hard"
+  },
+  {
+    "word": "circa",
+    "meaning": "Approximately or about, especially with dates",
+    "difficulty": "hard"
+  },
+  {
+    "word": "clomp",
+    "meaning": "To walk with heavy, noisy steps",
+    "difficulty": "hard"
+  },
+  {
+    "word": "comet",
+    "meaning": "A celestial object with a tail of gas and dust",
+    "difficulty": "hard"
+  },
+  {
+    "word": "crypt",
+    "meaning": "An underground room or vault beneath a church",
+    "difficulty": "hard"
+  },
+  {
+    "word": "demur",
+    "meaning": "To raise objections or show reluctance",
+    "difficulty": "hard"
+  },
+  {
+    "word": "dicey",
+    "meaning": "Involving or full of risks or uncertainties",
+    "difficulty": "hard"
+  },
+  {
+    "word": "dirge",
+    "meaning": "A lament for the dead, especially one sung at a funeral",
+    "difficulty": "hard"
+  },
+  {
+    "word": "ebony",
+    "meaning": "A hard, dark, blackish wood from certain tropical trees",
+    "difficulty": "hard"
+  },
+  {
+    "word": "edict",
+    "meaning": "An official order or proclamation issued by an authority",
+    "difficulty": "hard"
+  },
+  {
+    "word": "elegy",
+    "meaning": "A poem of serious reflection, typically a lament for the dead",
+    "difficulty": "hard"
+  },
+  {
+    "word": "elide",
+    "meaning": "To omit or slur over a sound or syllable when speaking",
+    "difficulty": "hard"
+  },
+  {
+    "word": "ethos",
+    "meaning": "The characteristic spirit of a culture or community",
+    "difficulty": "hard"
+  },
+  {
+    "word": "façade",
+    "meaning": "The face of a building; a deceptive outward appearance",
+    "difficulty": "hard"
+  },
+  {
+    "word": "feral",
+    "meaning": "In a wild state, especially after escape from captivity",
+    "difficulty": "hard"
+  },
+  {
+    "word": "fetid",
+    "meaning": "Smelling extremely unpleasant",
+    "difficulty": "hard"
+  },
+  {
+    "word": "flora",
+    "meaning": "The plants of a particular region, habitat, or geological period",
+    "difficulty": "hard"
+  },
+  {
+    "word": "foray",
+    "meaning": "A sudden attack or incursion into enemy territory",
+    "difficulty": "hard"
+  },
+  {
+    "word": "gamut",
+    "meaning": "The complete range or scope of something",
+    "difficulty": "hard"
+  },
+  {
+    "word": "girth",
+    "meaning": "The measurement around a person's or animal's body",
+    "difficulty": "hard"
+  },
+  {
+    "word": "glean",
+    "meaning": "To gather information or material bit by bit",
+    "difficulty": "hard"
+  },
+  {
+    "word": "glyph",
+    "meaning": "A pictographic character or symbol",
+    "difficulty": "hard"
+  },
+  {
+    "word": "guise",
+    "meaning": "An external appearance or manner that conceals the true nature",
+    "difficulty": "hard"
+  },
+  {
+    "word": "haven",
+    "meaning": "A place of safety or refuge",
+    "difficulty": "hard"
+  },
+  {
+    "word": "helix",
+    "meaning": "A spiral form or structure",
+    "difficulty": "hard"
+  },
+  {
+    "word": "hunch",
+    "meaning": "A feeling or guess based on intuition rather than fact",
+    "difficulty": "hard"
+  },
+  {
+    "word": "husky",
+    "meaning": "Dry and rough in quality, especially a voice",
+    "difficulty": "hard"
+  },
+  {
+    "word": "idiom",
+    "meaning": "A group of words with a meaning not deducible from the individual words",
+    "difficulty": "hard"
+  },
+  {
+    "word": "igloo",
+    "meaning": "A dome-shaped Inuit house made of blocks of snow",
+    "difficulty": "hard"
+  },
+  {
+    "word": "inept",
+    "meaning": "Having or showing no skill; clumsy",
+    "difficulty": "hard"
+  },
+  {
+    "word": "islet",
+    "meaning": "A very small island",
+    "difficulty": "hard"
+  }
 ]

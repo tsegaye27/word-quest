@@ -6,8 +6,9 @@ import React, { useEffect, useState } from "react";
 import { checkGuess } from "@/utils/checkGuess";
 import { getRandomWord } from "@/utils/words";
 import { getWordMeaning } from "@/utils/getWordMeaning";
+import { saveGameState, loadGameState, clearGameState } from "@/utils/store";
 
-export default function GameScreen() {
+const GameScreen = () => {
   const { isDarkMode } = useDarkMode();
   const [attempts, setAttempts] = useState(0);
   const [gameOver, setGameOver] = useState(false);
@@ -19,22 +20,67 @@ export default function GameScreen() {
   const [targetWord, setTargetWord] = useState("");
   const [wordMeaning, setWordMeaning] = useState("");
 
+  // Load saved state or initialize a new game
   useEffect(() => {
-    const initializeGame = async () => {
-      const word = await getRandomWord();
-      const meaning = await getWordMeaning(word);
-      setWordMeaning(meaning);
-      setTargetWord(word);
+    const loadState = async () => {
+      const savedState = await loadGameState("gameState");
+      if (savedState) {
+        setAttempts(savedState.attempts || 0);
+        setGuesses(savedState.guesses || []);
+        setGameOver(savedState.gameOver || false);
+        setShowModal(savedState.showModal || false);
+        setModalMessage(savedState.modalMessage || "");
+        setTargetWord(savedState.targetWord || "");
+        setWordMeaning(savedState.wordMeaning || "");
+      } else {
+        await initializeGame();
+      }
     };
-    initializeGame();
+    loadState();
   }, []);
+
+  // Save game state whenever relevant state changes
+  useEffect(() => {
+    const saveState = async () => {
+      await saveGameState("gameState", {
+        attempts,
+        guesses,
+        gameOver,
+        showModal,
+        modalMessage,
+        targetWord,
+        wordMeaning,
+      });
+    };
+    saveState();
+  }, [
+    attempts,
+    guesses,
+    gameOver,
+    showModal,
+    modalMessage,
+    targetWord,
+    wordMeaning,
+  ]);
+
+  // Initialize a new game
+  const initializeGame = async () => {
+    const word = await getRandomWord();
+    const meaning = await getWordMeaning(word);
+    setTargetWord(word);
+    setWordMeaning(meaning);
+  };
+
+  // Handle user guesses
   const handleGuess = (guess: string) => {
     const result = checkGuess(guess, targetWord);
     setGuesses([...guesses, result]);
 
     if (guess === targetWord) {
       setModalMessage(
-        `🎉 Congratulations!\nYou won in ${attempts + 1} ${attempts === 0 ? "attempt" : "attempts"}!`,
+        `🎉 Congratulations!\nYou won in ${attempts + 1} ${
+          attempts === 0 ? "attempt" : "attempts"
+        }!`,
       );
       setShowModal(true);
       setGameOver(true);
@@ -42,7 +88,11 @@ export default function GameScreen() {
     }
 
     if (attempts >= 5) {
-      setModalMessage(`Game Over\nThe word was ${targetWord}\n${wordMeaning}`);
+      let message = `Game Over\nThe word was ${targetWord}`;
+      if (wordMeaning && wordMeaning !== "No definition available.") {
+        message += `\n\n📚 Word Meaning:\n${wordMeaning}`;
+      }
+      setModalMessage(message);
       setShowModal(true);
       setGameOver(true);
     }
@@ -50,13 +100,14 @@ export default function GameScreen() {
     setAttempts((prev) => prev + 1);
   };
 
+  // Reset the game
   const resetGame = async () => {
-    const newWord = await getRandomWord();
-    setTargetWord(newWord);
+    await initializeGame();
     setAttempts(0);
     setGuesses([]);
     setGameOver(false);
     setShowModal(false);
+    await clearGameState("gameState");
   };
 
   return (
@@ -87,7 +138,7 @@ export default function GameScreen() {
       </Modal>
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -150,3 +201,5 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
 });
+
+export default GameScreen;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { DarkModeContext } from "@/context/DarkModeContext";
 import { Link } from "expo-router";
 import {
@@ -11,10 +11,29 @@ import {
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { StatusBar } from "expo-status-bar";
 import { Ionicons } from "@expo/vector-icons";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import { clearGameState } from "@/utils/store";
 
 export default function WelcomeScreen() {
   const colorScheme = useColorScheme();
   const [isDarkMode, setIsDarkMode] = useState(colorScheme === "dark");
+  const [hasSavedState, setHasSavedState] = useState(false);
+
+  useEffect(() => {
+    const checkSavedState = async () => {
+      try {
+        const savedState = await AsyncStorage.getItem("gameState");
+        setHasSavedState(!!savedState);
+      } catch (error) {
+        console.error("Error checking saved state:", error);
+      }
+    };
+    checkSavedState();
+  }, []);
+
+  const handleReset = async () => {
+    await clearGameState("gameState");
+  };
 
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
@@ -48,10 +67,22 @@ export default function WelcomeScreen() {
             href="/game"
             asChild
           >
-            <TouchableOpacity activeOpacity={0.8}>
+            <TouchableOpacity onPress={handleReset} activeOpacity={0.8}>
               <Text style={[styles.buttonText]}>New Game</Text>
             </TouchableOpacity>
           </Link>
+
+          {hasSavedState && (
+            <Link
+              style={[styles.button, isDarkMode && styles.darkButton]}
+              href="/game"
+              asChild
+            >
+              <TouchableOpacity activeOpacity={0.8}>
+                <Text style={[styles.buttonText]}>Resume Game</Text>
+              </TouchableOpacity>
+            </Link>
+          )}
 
           <Link
             style={[styles.button, isDarkMode && styles.darkButton]}

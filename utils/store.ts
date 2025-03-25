@@ -8,6 +8,7 @@ interface GameState {
   modalMessage: string;
   targetWord: string;
   wordMeaning: string;
+  difficulty: "easy" | "medium" | "hard";
 }
 
 export const saveGameState = async (key: string, value: GameState) => {

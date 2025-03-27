@@ -113,11 +113,7 @@ const GameScreen = () => {
 
   return (
     <View style={[styles.container, isDarkMode && styles.darkContainer]}>
-      {/* Difficulty selector */}
       <View style={styles.difficultyContainer}>
-        <Text style={[styles.difficultyLabel, isDarkMode && styles.darkText]}>
-          Difficulty:
-        </Text>
         <View style={styles.difficultyButtons}>
           <TouchableOpacity
             style={[
@@ -126,7 +122,7 @@ const GameScreen = () => {
             ]}
             onPress={() => {
               setDifficulty("easy");
-              initializeGame();
+              resetGame();
             }}
           >
             <Text
@@ -145,7 +141,7 @@ const GameScreen = () => {
             ]}
             onPress={() => {
               setDifficulty("medium");
-              initializeGame();
+              resetGame();
             }}
           >
             <Text
@@ -164,7 +160,7 @@ const GameScreen = () => {
             ]}
             onPress={() => {
               setDifficulty("hard");
-              initializeGame();
+              resetGame();
             }}
           >
             <Text

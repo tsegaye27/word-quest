@@ -2,557 +2,668 @@
   {
     "word": "apple",
     "meaning": "A round fruit with red, yellow, or green skin and firm white flesh",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "cefr_level": "A1"
   },
   {
     "word": "beach",
     "meaning": "A shore of sand or pebbles along a body of water",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "cefr_level": "A1"
   },
   {
     "word": "chair",
     "meaning": "A piece of furniture for one person to sit on",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "cefr_level": "A1"
   },
   {
     "word": "dance",
     "meaning": "To move rhythmically to music",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "cefr_level": "A1"
   },
   {
     "word": "earth",
     "meaning": "The planet we live on; soil or ground",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "cefr_level": "A2"
   },
   {
     "word": "field",
     "meaning": "An open area of land, especially one planted with crops or grass",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "cefr_level": "A1"
   },
   {
     "word": "green",
     "meaning": "The color of grass; environmentally friendly",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "cefr_level": "A1"
   },
   {
     "word": "heart",
     "meaning": "The organ that pumps blood through the body; the center of emotions",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "cefr_level": "A1"
   },
   {
     "word": "house",
     "meaning": "A building for human habitation",
-    "difficulty": "easy"
+    "difficulty": "hard",
+    "cefr_level": "C1"
   },
   {
     "word": "juice",
     "meaning": "The liquid extracted from fruits or vegetables",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "cefr_level": "A1"
   },
   {
     "word": "light",
     "meaning": "The natural agent that stimulates sight and makes things visible",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "cefr_level": "A1"
   },
   {
     "word": "money",
     "meaning": "A medium of exchange in the form of coins and banknotes",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "cefr_level": "A1"
   },
   {
     "word": "night",
     "meaning": "The period of darkness between sunset and sunrise",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "cefr_level": "A1"
   },
   {
     "word": "paper",
     "meaning": "Material manufactured in thin sheets from wood pulp",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "cefr_level": "A1"
   },
   {
     "word": "plant",
     "meaning": "A living organism that grows in soil, typically with leaves and roots",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "cefr_level": "A2"
   },
   {
     "word": "queen",
     "meaning": "A female monarch or the wife of a king",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "cefr_level": "A2"
   },
   {
     "word": "river",
     "meaning": "A large natural stream of water flowing in a channel to the sea or a lake",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "cefr_level": "A1"
   },
   {
     "word": "sound",
     "meaning": "Vibrations that travel through the air and can be heard",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "cefr_level": "A2"
   },
   {
     "word": "table",
     "meaning": "A piece of furniture with a flat top supported by legs",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "cefr_level": "A1"
   },
   {
     "word": "water",
     "meaning": "A transparent, odorless, tasteless liquid essential for life",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "cefr_level": "A1"
   },
   {
     "word": "young",
     "meaning": "Having lived or existed for only a short time; not old",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "cefr_level": "A1"
   },
   {
     "word": "bread",
     "meaning": "Food made of flour, water, and yeast mixed together and baked",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "cefr_level": "A1"
   },
   {
     "word": "cloud",
     "meaning": "A visible mass of water droplets suspended in the atmosphere",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "cefr_level": "A1"
   },
   {
     "word": "dream",
     "meaning": "A series of thoughts, images, and sensations occurring during sleep",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "cefr_level": "A1"
   },
   {
     "word": "fruit",
     "meaning": "The sweet and fleshy product of a tree or plant that contains seeds",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "cefr_level": "A1"
   },
   {
     "word": "horse",
     "meaning": "A large four-legged mammal with hooves used for riding or racing",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "cefr_level": "A1"
   },
   {
     "word": "knife",
     "meaning": "A cutting instrument with a sharp blade and handle",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "cefr_level": "A1"
   },
   {
     "word": "music",
     "meaning": "Vocal or instrumental sounds combined to produce beauty of form",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "cefr_level": "A1"
   },
   {
     "word": "phone",
     "meaning": "A device used to transmit sound over long distances",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "cefr_level": "A1"
   },
   {
     "word": "sleep",
     "meaning": "A natural periodic state of rest for the mind and body",
-    "difficulty": "easy"
+    "difficulty": "medium",
+    "cefr_level": "B1"
   },
   {
     "word": "space",
     "meaning": "The unlimited three-dimensional expanse in which all objects exist",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "cefr_level": "A2"
   },
   {
     "word": "tooth",
     "meaning": "A hard structure in the mouth used for biting and chewing",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "cefr_level": "A1"
   },
   {
     "word": "world",
     "meaning": "The earth, together with all of its countries and peoples",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "cefr_level": "A1"
   },
   {
     "word": "about",
     "meaning": "On the subject of; concerning",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "cefr_level": "A1"
   },
   {
     "word": "above",
     "meaning": "In or to a higher place than; over",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "cefr_level": "A1"
   },
   {
     "word": "alarm",
     "meaning": "A warning of danger; a device that warns or alerts",
-    "difficulty": "medium"
+    "difficulty": "easy",
+    "cefr_level": "A2"
   },
   {
     "word": "angle",
     "meaning": "The space between two intersecting lines or surfaces",
-    "difficulty": "medium"
+    "difficulty": "hard",
+    "cefr_level": "C1"
   },
   {
     "word": "ankle",
     "meaning": "The joint connecting the foot with the leg",
-    "difficulty": "medium"
+    "difficulty": "easy",
+    "cefr_level": "A2"
   },
   {
     "word": "badge",
     "meaning": "A small emblem worn to show identification or membership",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "cefr_level": "B2"
   },
   {
     "word": "bagel",
     "meaning": "A dense bread roll in the shape of a ring",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "cefr_level": "B2"
   },
   {
     "word": "beast",
     "meaning": "An animal, especially a large or dangerous four-footed one",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "cefr_level": "B1"
   },
   {
     "word": "blank",
     "meaning": "Empty; without writing or marks; expressionless",
-    "difficulty": "medium"
+    "difficulty": "easy",
+    "cefr_level": "A1"
   },
   {
     "word": "blend",
     "meaning": "To mix or combine smoothly and inseparably together",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "cefr_level": "B1"
   },
   {
     "word": "blink",
     "meaning": "To shut and open the eyes quickly",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "cefr_level": "B2"
   },
   {
     "word": "blunt",
     "meaning": "Having a dull edge or point; not sharp; direct in speech",
-    "difficulty": "medium"
+    "difficulty": "hard",
+    "cefr_level": "C2"
   },
   {
     "word": "blush",
     "meaning": "To become red in the face from embarrassment or shame",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "cefr_level": "B1"
   },
   {
     "word": "boost",
     "meaning": "To help or encourage to increase or improve",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "cefr_level": "B2"
   },
   {
     "word": "booth",
     "meaning": "A small compartment or enclosed space for a specific use",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "cefr_level": "B2"
   },
   {
     "word": "brake",
     "meaning": "A device for slowing or stopping a vehicle",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "cefr_level": "B2"
   },
   {
     "word": "brass",
     "meaning": "A yellow alloy of copper and zinc",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "cefr_level": "B1"
   },
   {
     "word": "brave",
     "meaning": "Ready to face and endure danger or pain; showing courage",
-    "difficulty": "medium"
+    "difficulty": "easy",
+    "cefr_level": "A2"
   },
   {
     "word": "bride",
     "meaning": "A woman on her wedding day or just before and after it",
-    "difficulty": "medium"
+    "difficulty": "easy",
+    "cefr_level": "A2"
   },
   {
     "word": "brush",
     "meaning": "An implement with bristles used for cleaning, grooming, or painting",
-    "difficulty": "medium"
+    "difficulty": "easy",
+    "cefr_level": "A1"
   },
   {
     "word": "bulky",
     "meaning": "Taking up much space, typically inconveniently",
-    "difficulty": "medium"
+    "difficulty": "hard",
+    "cefr_level": "C1"
   },
   {
     "word": "burst",
     "meaning": "To break open or apart suddenly and violently",
-    "difficulty": "medium"
+    "difficulty": "hard",
+    "cefr_level": "C1"
   },
   {
     "word": "cabin",
     "meaning": "A small simple dwelling or rural lodging",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "cefr_level": "B1"
   },
   {
     "word": "camel",
     "meaning": "A large desert animal with one or two humps on its back",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "cefr_level": "B1"
   },
   {
     "word": "candy",
     "meaning": "Sweet food made with sugar or syrup",
-    "difficulty": "medium"
+    "difficulty": "easy",
+    "cefr_level": "A1"
   },
   {
     "word": "carry",
     "meaning": "To support and move someone or something from one place to another",
-    "difficulty": "medium"
+    "difficulty": "easy",
+    "cefr_level": "A1"
   },
   {
     "word": "catch",
     "meaning": "To intercept and hold a moving object with one's hands",
-    "difficulty": "medium"
+    "difficulty": "easy",
+    "cefr_level": "A1"
   },
   {
     "word": "cause",
     "meaning": "A person or thing that gives rise to an action or condition",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "cefr_level": "B2"
   },
   {
     "word": "charm",
     "meaning": "The power or quality of pleasing or delighting; attractiveness",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "cefr_level": "B1"
   },
   {
     "word": "chart",
     "meaning": "A sheet of information in the form of a table, graph, or diagram",
-    "difficulty": "medium"
+    "difficulty": "easy",
+    "cefr_level": "A2"
   },
   {
     "word": "check",
     "meaning": "To examine to determine accuracy or condition; a pattern of squares",
-    "difficulty": "medium"
+    "difficulty": "easy",
+    "cefr_level": "A1"
   },
   {
     "word": "chess",
     "meaning": "A board game for two players using pieces moved on a checkered board",
-    "difficulty": "medium"
+    "difficulty": "easy",
+    "cefr_level": "A2"
   },
   {
     "word": "chief",
     "meaning": "A leader or ruler of a people or clan; most important",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "cefr_level": "B1"
   },
   {
     "word": "child",
     "meaning": "A young human being below the age of puberty",
-    "difficulty": "medium"
+    "difficulty": "easy",
+    "cefr_level": "A1"
   },
   {
     "word": "chill",
     "meaning": "A moderate but penetrating coldness; to make cool",
-    "difficulty": "medium"
+    "difficulty": "hard",
+    "cefr_level": "C1"
   },
   {
     "word": "cinch",
     "meaning": "An extremely easy task; a sure thing",
-    "difficulty": "medium"
+    "difficulty": "hard",
+    "cefr_level": "C2"
   },
   {
     "word": "civic",
     "meaning": "Relating to a city or town, especially its administration",
-    "difficulty": "medium"
+    "difficulty": "hard",
+    "cefr_level": "C1"
   },
   {
     "word": "coast",
     "meaning": "The land next to or close to the sea or ocean",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "cefr_level": "B1"
   },
   {
     "word": "coral",
     "meaning": "A hard red, pink, or white substance secreted by marine polyps",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "cefr_level": "B2"
   },
   {
     "word": "cough",
     "meaning": "To expel air from the lungs with a sudden sharp sound",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "cefr_level": "B1"
   },
   {
     "word": "crack",
     "meaning": "A line on the surface of something along which it has split",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "cefr_level": "B2"
   },
   {
     "word": "craft",
     "meaning": "An activity involving skill in making things by hand",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "cefr_level": "B1"
   },
   {
     "word": "crane",
     "meaning": "A large machine with a projecting arm used for moving heavy objects",
-    "difficulty": "medium"
+    "difficulty": "hard",
+    "cefr_level": "C1"
   },
   {
     "word": "crate",
     "meaning": "A slatted wooden case used for transporting goods",
-    "difficulty": "medium"
+    "difficulty": "hard",
+    "cefr_level": "C2"
   },
   {
     "word": "crowd",
     "meaning": "A large number of people gathered together in a disorganized way",
-    "difficulty": "medium"
+    "difficulty": "easy",
+    "cefr_level": "A2"
   },
   {
     "word": "daily",
     "meaning": "Happening or done every day",
-    "difficulty": "medium"
+    "difficulty": "easy",
+    "cefr_level": "A2"
   },
   {
     "word": "dairy",
     "meaning": "A place where milk is processed and products like butter are produced",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "cefr_level": "B2"
   },
   {
     "word": "denim",
     "meaning": "A sturdy cotton twill fabric, typically blue, used for jeans",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "cefr_level": "B2"
   },
   {
     "word": "depth",
     "meaning": "The distance from the top to the bottom of something",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "cefr_level": "B1"
   },
   {
     "word": "digit",
     "meaning": "A finger or toe; a single character in a number system",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "cefr_level": "B2"
   },
   {
     "word": "doubt",
     "meaning": "A feeling of uncertainty or lack of conviction",
-    "difficulty": "medium"
+    "difficulty": "easy",
+    "cefr_level": "A2"
   },
   {
     "word": "elbow",
     "meaning": "The joint between the forearm and the upper arm",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "cefr_level": "B1"
   },
   {
     "word": "elder",
     "meaning": "Of greater age; senior",
-    "difficulty": "medium"
+    "difficulty": "hard",
+    "cefr_level": "C1"
   },
   {
     "word": "enemy",
     "meaning": "A person who is actively opposed or hostile to someone",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "cefr_level": "B1"
   },
   {
     "word": "enjoy",
     "meaning": "To take pleasure in something",
-    "difficulty": "medium"
+    "difficulty": "easy",
+    "cefr_level": "A1"
   },
   {
     "word": "enter",
     "meaning": "To come or go into a place",
-    "difficulty": "medium"
+    "difficulty": "easy",
+    "cefr_level": "A2"
   },
   {
     "word": "equal",
     "meaning": "Being the same in quantity, size, degree, or value",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "cefr_level": "B2"
   },
   {
     "word": "event",
     "meaning": "A thing that happens or takes place, especially one of importance",
-    "difficulty": "medium"
+    "difficulty": "easy",
+    "cefr_level": "A1"
   },
   {
     "word": "exact",
     "meaning": "Correct in all details; precise",
-    "difficulty": "medium"
+    "difficulty": "hard",
+    "cefr_level": "C2"
   },
   {
     "word": "exist",
     "meaning": "To have objective reality or being",
-    "difficulty": "medium"
+    "difficulty": "easy",
+    "cefr_level": "A2"
   },
   {
     "word": "abyss",
     "meaning": "A deep, immeasurable space or chasm",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "cefr_level": "C1"
   },
   {
     "word": "acrid",
     "meaning": "Having an irritatingly strong and unpleasant taste or smell",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "cefr_level": "C2"
   },
   {
     "word": "acute",
     "meaning": "Sharp or severe in effect; intense; having a sharp point",
-    "difficulty": "hard"
+    "difficulty": "medium",
+    "cefr_level": "B2"
   },
   {
     "word": "adept",
     "meaning": "Very skilled or proficient at something",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "cefr_level": "C2"
   },
   {
     "word": "agile",
     "meaning": "Able to move quickly and easily",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "cefr_level": "C2"
   },
   {
     "word": "alibi",
     "meaning": "A claim that one was elsewhere when an act took place",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "cefr_level": "C1"
   },
   {
     "word": "amend",
     "meaning": "To make minor changes to make something better or more accurate",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "cefr_level": "C2"
   },
   {
     "word": "ample",
     "meaning": "Enough or more than enough; plentiful",
-    "difficulty": "hard"
+    "difficulty": "medium",
+    "cefr_level": "B2"
   },
   {
     "word": "angst",
     "meaning": "A feeling of deep anxiety or dread",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "cefr_level": "C2"
   },
   {
     "word": "anvil",
     "meaning": "A heavy iron block on which metal is shaped by hammering",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "cefr_level": "C2"
   },
   {
     "word": "axiom",
     "meaning": "A statement or proposition regarded as self-evidently true",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "cefr_level": "C2"
   },
   {
     "word": "azure",
     "meaning": "Bright blue in color, like a cloudless sky",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "cefr_level": "C2"
   },
   {
     "word": "belie",
     "meaning": "To give a false impression of; to contradict",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "cefr_level": "C1"
   },
   {
     "word": "beret",
     "meaning": "A round flat cap of felt or wool",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "cefr_level": "C2"
   },
   {
     "word": "blimp",
     "meaning": "A small airship or dirigible",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "cefr_level": "C2"
   },
   {
     "word": "brink",
     "meaning": "The extreme edge of land before a steep slope",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "cefr_level": "C2"
   },
   {
     "word": "cacti",
     "meaning": "Plural form of cactus, plants with thick fleshy stems",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "cefr_level": "C1"
   },
   {
     "word": "circa",
     "meaning": "Approximately or about, especially with dates",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "cefr_level": "C2"
   },
   {
     "word": "clomp",
@@ -562,141 +673,163 @@
   {
     "word": "comet",
     "meaning": "A celestial object with a tail of gas and dust",
-    "difficulty": "hard"
+    "difficulty": "medium",
+    "cefr_level": "B1"
   },
   {
     "word": "crypt",
     "meaning": "An underground room or vault beneath a church",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "cefr_level": "C2"
   },
   {
     "word": "demur",
     "meaning": "To raise objections or show reluctance",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "cefr_level": "C2"
   },
   {
     "word": "dicey",
     "meaning": "Involving or full of risks or uncertainties",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "cefr_level": "C2"
   },
   {
     "word": "dirge",
     "meaning": "A lament for the dead, especially one sung at a funeral",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "cefr_level": "C2"
   },
   {
     "word": "ebony",
     "meaning": "A hard, dark, blackish wood from certain tropical trees",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "cefr_level": "C1"
   },
   {
     "word": "edict",
     "meaning": "An official order or proclamation issued by an authority",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "cefr_level": "C2"
   },
   {
     "word": "elegy",
     "meaning": "A poem of serious reflection, typically a lament for the dead",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "cefr_level": "C2"
   },
   {
     "word": "elide",
     "meaning": "To omit or slur over a sound or syllable when speaking",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "cefr_level": "C2"
   },
   {
     "word": "ethos",
     "meaning": "The characteristic spirit of a culture or community",
-    "difficulty": "hard"
-  },
-  {
-    "word": "façade",
-    "meaning": "The face of a building; a deceptive outward appearance",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "cefr_level": "C2"
   },
   {
     "word": "feral",
     "meaning": "In a wild state, especially after escape from captivity",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "cefr_level": "C2"
   },
   {
     "word": "fetid",
     "meaning": "Smelling extremely unpleasant",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "cefr_level": "C2"
   },
   {
     "word": "flora",
     "meaning": "The plants of a particular region, habitat, or geological period",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "cefr_level": "C2"
   },
   {
     "word": "foray",
     "meaning": "A sudden attack or incursion into enemy territory",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "cefr_level": "C2"
   },
   {
     "word": "gamut",
     "meaning": "The complete range or scope of something",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "cefr_level": "C1"
   },
   {
     "word": "girth",
     "meaning": "The measurement around a person's or animal's body",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "cefr_level": "C1"
   },
   {
     "word": "glean",
     "meaning": "To gather information or material bit by bit",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "cefr_level": "C1"
   },
   {
     "word": "glyph",
     "meaning": "A pictographic character or symbol",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "cefr_level": "C2"
   },
   {
     "word": "guise",
     "meaning": "An external appearance or manner that conceals the true nature",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "cefr_level": "C1"
   },
   {
     "word": "haven",
     "meaning": "A place of safety or refuge",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "cefr_level": "C2"
   },
   {
     "word": "helix",
     "meaning": "A spiral form or structure",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "cefr_level": "C2"
   },
   {
     "word": "hunch",
     "meaning": "A feeling or guess based on intuition rather than fact",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "cefr_level": "C2"
   },
   {
     "word": "husky",
     "meaning": "Dry and rough in quality, especially a voice",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "cefr_level": "C2"
   },
   {
     "word": "idiom",
     "meaning": "A group of words with a meaning not deducible from the individual words",
-    "difficulty": "hard"
+    "difficulty": "medium",
+    "cefr_level": "B1"
   },
   {
     "word": "igloo",
     "meaning": "A dome-shaped Inuit house made of blocks of snow",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "cefr_level": "C1"
   },
   {
     "word": "inept",
     "meaning": "Having or showing no skill; clumsy",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "cefr_level": "C1"
   },
   {
     "word": "islet",
     "meaning": "A very small island",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "cefr_level": "C1"
   }
 ]

@@ -1,3 +1,4 @@
+import { isValidWord } from "@/utils/validateWord";
 import React, { useState, useRef } from "react";
 import {
   StyleSheet,
@@ -69,7 +70,7 @@ export default function GuessInput({ onSubmit, disabled }: GuessInputProps) {
 
   const handleSubmit = () => {
     const guess = letters.join("");
-    if (guess.length === 5) {
+    if (guess.length === 5 && isValidWord(guess)) {
       onSubmit(guess);
       setLetters(["", "", "", "", ""]);
       inputs.current[0]?.focus();

@@ -23,7 +23,14 @@ export default function WelcomeScreen() {
     const checkSavedState = async () => {
       try {
         const savedState = await AsyncStorage.getItem("gameState");
-        setHasSavedState(!!savedState);
+        try {
+          const parsedState = savedState && (await JSON.parse(savedState));
+          setHasSavedState(parsedState && parsedState.guesses.length > 0);
+          console.log("parsedState", parsedState.guesses.length > 0);
+        } catch (error) {
+          setHasSavedState(false);
+        }
+        console.log(hasSavedState);
       } catch (error) {
         console.error("Error checking saved state:", error);
       }

@@ -1,6 +1,6 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
-interface GameState {
+export interface GameState {
   attempts: number;
   guesses: { letter: string; color: string }[][];
   gameOver: boolean;
